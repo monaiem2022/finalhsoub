@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="search.css">
+    <title>أكاديمية حسوب</title>
+  </head>
+  <body>
+
+    <header>
+      <section class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              
+              <div class="first-title">
+               <div class="row">
+                <div class="signin" id="signIn" data-toggle="modal" data-target="#exampleModal">تسجيل الدخول</div>
+                <!--start of modal-->
+                <div class="all-modal" >
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" id="allModal">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                      </div>
+                      <div class="modal-body">
+                        <form id="form">
+                          <input id="email" type="email" class="form-control mb-3" placeholder="برجاء ادخال الايميل" required >
+                          <input id="password" type="password" class="form-control" placeholder="برجاء ادخال الباسورد" required >
+                          <button id="close" data-dismiss="modal" type="submit" class="btn btn-primary close1">اغلاق</button>
+                          <button id="confirm1" type="submit" class="btn btn-primary confirm1">تأكيد</button>
+                          <button id="confirm2" type="submit" class="btn btn-primary confirm2">2تأكيد</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--end of modal-->
+                
+                <div class="icon ml-5">
+                <i class="fa fa-envelope messageIcon" id="messageIcon" data-toggle="tooltip" data-placement="top" title="رسائل"></i>
+                <i id="bellIcon" class="fa fa-bell ml-4" data-toggle="tooltip" data-placement="top" title="التنبيهات"></i>
+               
+                </div>
+                <div class="add ml-5">
+                  <span data-toggle="tooltip" data-placement="top" title=" قسم الاسئلة مغلق الان ياريت تحاول و تعتمد على نفسك و متستسهلش الموضوع و تسأل من غير بحث"> اضافة +</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col text-right">
+              <div class="title-img">
+                <img src="hsoub.png">
+                </div>
+            </div>
+          </div>
+
+          <div class="mustSign" id="mustSign">لابد من تسجيل الدخول أولا</div>
+
+          <div class="bellAbsolute" id="bellAbsolute">
+            <div class="bellAbsoluteTop">
+              <div class="row">
+                <div class="col text-right alarm">  <span id="closeBellAbsolute" class="pl-2">X</span> التنبيهات</div>
+                <div class="col settingAlarm"><i class="fa fa-cog"></i> اعدادات التنبيهات</div>
+              </div>
+            </div>
+            <div class="trainer">
+              <div class="col text-right">
+               <div class="d-flex">
+                <img class="mt-4" src="mohammed.png">
+                <div class="details pt-2 pr-2">
+                  اقتبس mohammed AI Aik احدى مشاركاتك فى فيديو: <br>01 ملخص المسار<br>
+                  <span class="time"> الاتنين الساعه21:50 </span>
+                </div>
+               </div>
+              </div>
+              <hr>
+              <div class="col text-right">
+                <div class="d-flex">
+                 <img class="mt-4" src="wael.png">
+                 <div class="details pt-2 pr-2">
+                   اقتبس wael Aljamal احدى مشاركاتك فى فيديو: <br>01 ملخص المسار<br>
+                   <span class="time"> الاتنين الساعه21:50 </span>
+                 </div>
+                </div>
+               </div>
+               <hr>
+               <div class="col text-right">
+                <div class="d-flex">
+                 <img class="mt-4" src="awad.png">
+                 <div class="details pt-2 pr-2">
+                   اقتبس محمد أبو عواداحدى مشاركاتك فى فيديو: <br>01 ملخص المسار<br>
+                   <span class="time"> الاتنين الساعه21:50 </span>
+                 </div>
+                </div>
+               </div>
+               <hr>
+               <div class="col text-right">
+                <div class="d-flex">
+                 <img class="mt-4" src="adnane.png">
+                 <div class="details pt-2 pr-2">
+                   اقتبس سامح أشرف احدى مشاركاتك فى فيديو: <br>01 ملخص المسار<br>
+                   <span class="time"> الاتنين الساعه21:50 </span>
+                 </div>
+                </div>
+               </div>
+               <hr>
+               <div class="col text-right">
+                <div class="d-flex">
+                 <img class="mt-4" src="sameh.png">
+                 <div class="details pt-2 pr-2">
+                   اقتبس Adnane Kadriاحدى مشاركاتك فى فيديو: <br>01 ملخص المسار<br>
+                   <span class="time"> الاتنين الساعه21:50 </span>
+                 </div>
+                </div>
+               </div>
+               <hr>
+               <div class="col text-right">
+                <div class="d-flex">
+                 <img class="mt-4" src="osama.png">
+                 <div class="details pt-2 pr-2">
+                   اقتبس أسامة زيادة احدى مشاركاتك فى فيديو: <br>01 ملخص المسار<br>
+                   <span class="time"> الاتنين الساعه21:50 </span>
+                 </div>
+                </div>
+               </div>
+            </div>
+            <div class="text-center bellAbsoluteFooter mt-4"> <i class="fas fa-bars ml-2 footerIcon"></i> اعرض كل التنبيهات</div>
+          </div>
+          
+
+          <div class="absolute-message" id="absoluteMessage">
+          
+            
+            <div class="absolute-message-top">
+              <div class="row">
+                <div class="col text-right box">  صندوق الواد  </div>
+                <div class="col new">رسالة جديدة</div>
+              </div>
+            </div>
+            <div class="content pt-3">
+            
+              <div class="row">
+                <div class="col-9 text-right pb-3">
+                  <div class="d-flex">
+                   <img src="elbadeel.png" alt="">
+                   <div class="pr-3"> السلام عليكم</div>
+                  </div>
+                 </div>
+                
+                 <div class="col-3">
+                   <div>30 أكتوبر</div>
+                 </div>
+                 
+                 <div class="col-9 text-right pb-3">
+                  <div class="d-flex">
+                   <img src="sameh.png" alt="">
+                   <div class="pr-3">و عليكم السلام أحمد</div>
+                  </div>
+                 </div>
+                 <div class="col-3">
+                   <div>30 أكتوبر</div>
+                 </div>
+                 
+
+                <div class="col-9 text-right pb-3">
+                 <div class="d-flex">
+                  <img src="elbadeel.png" alt="">
+                  <div class="pr-3">كنت عاوز اعرف حضرتك وصلت لحد فين فى الدورة</div>
+                 </div>
+                </div>
+                <div class="col-3">
+                  <div>30 أكتوبر</div>
+                </div>
+               
+
+                <div class="col-9 text-right pb-3">
+                  <div class="d-flex">
+                   <img src="sameh.png" alt="">
+                   <div class="pr-3">مش فاهم</div>
+                  </div>
+                 </div>
+                 <div class="col-3">
+                   <div>30 أكتوبر</div>
+                 </div>
+
+                 <div class="col-9 text-right pb-3">
+                  <div class="d-flex">
+                   <img src="elbadeel.png" alt="">
+                   <div class="pr-3">انا اسف كنت بحسب حضرتك متدرب</div>
+                  </div>
+                 </div>
+                 <div class="col-3">
+                   <div>30 أكتوبر</div>
+                 </div>
+
+                 <div class="col-9 text-right pb-3">
+                  <div class="d-flex">
+                   <img src="sameh.png" alt="">
+                   <div class="pr-3">لا مشكلة أبدا جزاك الله خيرا</div>
+                  </div>
+                 </div>
+                 <div class="col-3">
+                   <div>30 أكتوبر</div>
+                 </div>
+              </div>
+            </div>
+            <div class="absoluteMessageFooter text-center">
+              <i class="fas fa-bars ml-2 footerIcon"></i> <span class="go"> الذهاب الى صنوق الوارد</span>
+              <div class="closeAbsoluteMessage" id="closeAbsoluteMessage">X</div>
+            </div>
+          </div>
+
+          <div class="newMessage pt-3" id="newMessage">
+            <div class="col ">
+              <div class="row">
+                <div class="col text-right rightMessage">رسالة جديدة</div>
+                <div class="col closeMessage"><span class="closeMessageSon">X</span></div>
+              </div>
+            <hr>
+           
+              <div class="col text-right">
+               <form action="">
+                <div class="mb-2"> الى <span class="mr-3">(حقل الزامى)</span></div>
+                <div class="input1"> 
+                  <input id="email" type="email" class="form-control mb-3" required >
+                </div>
+                <div class="mb-2"> عنوان الرسالة <span class="mr-3">(حقل الزامى)</span></div>
+                <div class="input1"> 
+                  <input id="text"  class="form-control mb-3" required >
+                </div>
+               
+                <div class="pb-2"> نص الرسالة <span class="mr-3">(حقل الزامى)</span></div>
+               
+
+                <div class="mainMessage">
+                  <div class="letters d-flex">
+                    <div id="boldFont">B</div>
+                    <div id="underlinedFont"><u>U</u></div>
+                    <div id="rightFont">الخط لليمين</div>
+                    <div id="middleFont">الخط فى المنتصف</div>
+                    <div id="leftFont">الخط لليسار</div>
+                    </div>
+                    <div class="messageContent">
+                      <textarea id="textarea" required></textarea>
+                       </div>
+                  </div>
+
+                  <div class="messageFooter">
+                    <div class="row">
+                      <div class="col">
+                        <div class="zip">
+                          <input type="file" id="file">
+                          <label>اسحب الملفات الى هنا لارفاقها أو</label>
+                          <label for="file"> <span>اختر ملف...</span></label>
+                        </div>
+                      </div>
+                      <div class="col text-left">
+                        <div class="anotherFiles">
+                          <div class="dropdown1">
+                            <div class="dropdownSon" id="dropdownSon">
+                              <div>
+                                <input type="file" id="first">
+                                <label for="first">أضف مرفقات موجوده</label>
+                              </div>
+                              <div>
+                                <input type="file" id="second">
+                                <label for="second"> أضف صورة من رابط خارجى</label>
+                              </div>
+                            </div>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">
+                              أضف مرفقات أخرى
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-left send">
+                      <button class="btn btn-secondary dropdown" id="send" type="submit" >ارسال</button>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               </form>
+              </div>
+              <div class="second-title">
+                <div class="second-title-div">
+               <div class="row">
+                    <div class="courses follow mr-1 mr-1">
+                      <li>دورات</li>
+                      </div>
+                    <div class="books follow mr-1">
+                      <li>كتب</li>
+                    </div>
+                    <div class="answers follow mr-1">
+                      <li>اسئلة و أجوبة</li>
+                    </div>
+                    <div class="articles follow mr-1">
+                      <li> دروس و مقالات </li>
+                    </div>
+                    <div class="my-courses follow mr-1">
+                      <li>  دوراتى  </li>
+                    </div>
+                    <div class="main follow">
+                      <li>  الرئيسية  </li>
+                </div>
+               
+               </div>
+              </div>
+              </div>
+              <div class="col">
+              
+              <div class="search">
+                <form>
+                  <div class="form-group">
+                    <input id="search" type="text" class="form-control" placeholder="بحث...">
+                    <div class="searchSon" id="searchSon">
+                      <div class="searchSon2">
+                        <div>css</div>
+                        <div>html</div>
+                        <div>javascript</div>
+                        <div>مقالات</div>
+                        <div>تسويق</div>
+                        <div>مبيعات</div>
+                        <div>devops</div>
+                      </div>
+                     
+                      <div id="searchResult"></div>
+                      <div class="ryada ">مقالات ريادة الاعمال</div>
+                      <div class="parmaga">مقالات برمجة</div>
+                      <div class="tasmem">مقالات التصميم</div>
+                      <div class="ops">مقالا Devops</div>
+                      <div class="taswek"> مقالات التسويق و المبيعات</div>
+                      <div class="amal">مقالات العمل الحر</div>
+                      <div class="parameg">مقالات البرامج و التطبيقات</div>
+                      <div class="shahadat">مقالات الشهادات المتخصصة</div>
+                      <div class="agweba">أسئلة و أجوبة</div>
+                      <div class="kotob">كتب</div>
+                      <div class="adaa">أعضاء</div>
+                      <div></div>
+                    </div>
+                  </div>
+                  </form>
+              </div>
+            </div>
+            </div>
+      </section>
+      
+
+      <section class="activity">
+        <div class="container">
+     
+          <div class="col">
+            <div class="activity-title1">
+            <div class=" row">
+             <a href="allactivity.html" ><div>كل الأنشطة</div></a>
+             <div>
+               <div  class="all">
+                 الأنشطة الخاصة بي
+               </div>
+               <div class="part">
+                <div>صفحات الأنشطة الافتراضية</div>
+                 <div>المحتوى غير المقرؤ</div>
+                 <div>المحتوى الذى اتابعه</div>
+                 <div>المحتوى الذى شاركت به</div>
+                 <div>المحتوى الذى انشأته</div>
+                 <div>الأعضاء الذين اتبعهم</div>
+                 <div>صفحات أنشطة جديده</div>
+               </div>
+             </div>
+             <div><a href="search.html">بحث</a></div>
+             <div  class="all">
+             تابعنا
+            </div>
+            <div class="part two">
+             <div><a href="https://twitter.com/">تابعنا على تويتر</a></div>
+              <div><a href="https://www.facebook.com/">تابعنا على فيسبوك</a></div>
+              <div><a href="https://www.youtube.com/">تابعنا على اليوتيوب</a></div>
+              
+            </div>
+           
+           
+             <div>تعلم البرمجة</div>
+             <div> موسوعة حسوب</div>
+           </div>
+           </div>
+           <div class="activity-title2">
+            <div class=" row">
+              <div>تطوير واجهات المستخدم</div>
+           </div>
+           </div>
+
+           <div class="activity-title3">
+            <div class=" row">
+              <div class="answers1">ريادة الاعمال</div>
+              <div class="answers2">العمل الحر</div>
+              <div class="answers3">التسويق و المبيعات</div>
+              <div class="answers4">البرمجة</div>
+              <div class="answers5">التصميم</div>
+              <div class="answers6">DevOps</div>
+              <div class="answers7">البرامج و التطبيقات</div>
+              <div class="answers8">الشهادات المتخصصة</div>
+           </div>
+           </div>
+
+           <div class="activity-title4">
+            <div class=" row">
+              <div class="answers1">ريادة الاعمال</div>
+              <div class="answers2">العمل الحر</div>
+              <div class="answers3">التسويق و المبيعات</div>
+              <div class="answers4">البرمجة</div>
+              <div class="answers5">التصميم</div>
+              <div class="answers6">DevOps</div>
+              <div class="answers7">البرامج و التطبيقات</div>
+              <div class="answers8">الشهادات المتخصصة</div>
+           </div>
+           </div>
+
+           <div class="activity-title5">
+            <div class=" row">
+              <div class="answers1">ريادة الاعمال</div>
+              <div class="answers2">العمل الحر</div>
+              <div class="answers3">التسويق و المبيعات</div>
+              <div class="answers4">البرمجة</div>
+              <div class="answers5">التصميم</div>
+              <div class="answers6">DevOps</div>
+  
+           </div>
+           </div>
+
+           <div class="activity-title6">
+            <div class=" row">
+              <div>دورات تعليمية</div>
+              <div>طلبات الشراء</div>
+              <div>ادارة المشتريات</div>
+              <div>معلوماتى</div>
+             <div>بطاقات هدية</div>
+           </div>
+           </div>
+
+           </div>
+           </div>
+      </section>
+      </header>
+
+      <section class="home">
+        <div class="container">
+          <div class="row">
+            <div class="col "><span class="read">المحتوى غير المقروء <i class="fa fa-magic"></i> </span></div>
+            <div class="col text-right"><span class="home">الرئيسية <i class="fa fa-home"></i> </span></div>
+          </div>
+          <div class="col"><hr></div>
+        </div>
+      </section>
+
+
+      <section class="searchSite text-right">
+        <div class="container">
+          <div class="col">
+            <div class="empty" id="empty">ddd</div>
+            <div class="site">البحث في الموقع</div>
+            <div class="inputSerach">
+              <div class="inputSerchText d-flex">
+                <spn><i class="fa fa-search mt-3 ml-2" id="bigSearch"></i></spn>
+                <input type="text" class="form-control" id="emptyInput">
+              </div>
+             
+
+              <div class="inputSerachSon">
+                <div class="col">
+                 <div class="row block">
+                  <div class="searchKeyword mt-3">
+                    <span class="keyword">+</span>ابحث بالكلمات المفتاحية
+                    <input type="text" class="form-control mt-3">
+                  </div>
+                  <div class="searchBook  mt-3">
+                    <span class="booky">+</span>ابحث باسم الكتاب
+                    <input type="text" class="form-control mt-3">
+                  </div>
+                 </div>
+                  </div>
+                  <div class="sortContent">
+                    <div class="row">
+                     <div class="col-lg-3 col-sm-12">
+                       <div class="content"> نوع المُحتوى</div>
+                       <div class="radio2 radio1">
+                        <td><input type="radio" class="radio2"></td>
+                        <td>  كل الموقع</td>
+                        <div class="oo">
+                          <div class="choose1" id="choose1">
+                            <div class="d1">البرمجة</div>
+                            <hr>
+                            <div class="d2">التصميم</div>
+                            <hr>
+                            <div class="d3">مجتمع حسوب</div>
+                            <hr>
+                            <div class="d4">PHP</div>
+                            <hr>
+                            <div class="d5">Node js</div>
+                            <hr>
+                            <div class="d6">DevOps</div>
+                          </div>
+                         </div>
+                       
+                      </div>
+                      <div class="radio">
+                        <td><input type="radio" class="radio2"></td>
+                        <td>مقالات  ريادة الاعمال</td>
+                        <div class="oo">
+                          
+                          <div class="choose1" id="choose1">
+                            <div class="d1">rريادة الاعمال</div>
+                            <hr>
+                            <div class="d2"> ريادة اعمال</div>
+                            <hr>
+                            <div class="d3">التسويق والمبيعات</div>
+                            <hr>
+                            <div class="d4">البرمجة</div>
+                            <hr>
+                            <div class="d5">التصميم</div>
+                            <hr>
+                            <div class="d6">DevOps</div>
+                          </div>
+                         </div>
+                      </div>
+                            <div class="radio">
+                              <td ><input type="radio" class="radio2"></td>
+                              <td>مقالات  التصميم</td>
+                              <div class="oo">
+                                
+                                <div class="choose1" id="choose1">
+                                  <div class="d1">مقالات التصميم</div>
+                                  <hr>
+                                  <div class="d2">مقالات التصميم</div>
+                                  <hr>
+                                  <div class="d3">التسويق والمبتيعا</div>
+                                  <hr>
+                                  <div class="d4">البرمجة</div>
+                                  <hr>
+                                  <div class="d5">التصميم</div>
+                                  <hr>
+                                  <div class="d6">DevOps</div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="radio">
+                              <td ><input type="radio" class="radio2"></td>
+                              <td>مقالات  Devops</td>
+                              <div class="oo">
+                                
+                                <div class="choose1" id="choose1">
+                                  <div class="d1"> DevOps</div>
+                                  <hr>
+                                  <div class="d2"> DevOps</div>
+                                  <hr>
+                                  <div class="d3">التسويق والمبيعات</div>
+                                  <hr>
+                                  <div class="d4">البرمجة</div>
+                                  <hr>
+                                  <div class="d5">التصميم</div>
+                                  <hr>
+                                  <div class="d6">DevOps</div>
+                                </div>
+                               </div>
+                            </div>
+                            
+                            <div class="radio">
+                              <td ><input type="radio" class="radio2"></td>
+                              <td>مقالات  التسويق و المبيعات</td>
+                              <div class="oo">
+                                <div class="choose1" id="choose1">
+                                  <div class="d1">التسويق</div>
+                                  <hr>
+                                  <div class="d2">المبيعات</div>
+                                  <hr>
+                                  <div class="d3">التسويق والمبيعات</div>
+                                  <hr>
+                                  <div class="d4">البرمجة</div>
+                                  <hr>
+                                  <div class="d5">التصميم</div>
+                                  <hr>
+                                  <div class="d6">DevOps</div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="radio">
+                              <td ><input type="radio" class="radio2"></td>
+                              <td>مقالات  العمل الحر</td>
+                              <div class="oo">
+                                
+                                <div class="choose1" id="choose1">
+                                  <div class="d1">العمل الحر</div>
+                                  <hr>
+                                  <div class="d2">العمل الحر</div>
+                                  <hr>
+                                  <div class="d3">التسويق والمبيعات</div>
+                                  <hr>
+                                  <div class="d4">البرمجة</div>
+                                  <hr>
+                                  <div class="d5">التصميم</div>
+                                  <hr>
+                                  <div class="d6">DevOps</div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="radio">
+                              <td ><input type="radio" class="radio2"></td>
+                              <td>مقالات  البرامج والتطبيقات</td>
+                              <div class="oo">
+                                
+                                <div class="choose1" id="choose1">
+                                  <div class="d1">البرامج و التطبيقات</div>
+                                  <hr>
+                                  <div class="d2">البرامج و التطبيقات</div>
+                                  <hr>
+                                  <div class="d3">التسويق والمبيعات</div>
+                                  <hr>
+                                  <div class="d4">البرمجة</div>
+                                  <hr>
+                                  <div class="d5">التصميم</div>
+                                  <hr>
+                                  <div class="d6">DevOps</div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="radio">
+                              <td ><input type="radio" class="radio2"></td>
+                              <td>مقالات  الشهادات المتخصصة</td>
+                              <div class="oo">
+                                
+                                <div class="choose1" id="choose1">
+                                  <div class="d1">الشهادات المتخصصه</div>
+                                  <hr>
+                                  <div class="d2">rالعمل الحر</div>
+                                  <hr>
+                                  <div class="d3">التسويق والمبيعات</div>
+                                  <hr>
+                                  <div class="d4">البرمجة</div>
+                                  <hr>
+                                  <div class="d5">التصميم</div>
+                                  <hr>
+                                  <div class="d6">DevOps</div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="radio">
+                              <td ><input type="radio" class="radio2"></td>
+                              <td>  أسئلة و أجوبة</td>
+                              <div class="oo">
+                                
+                                <div class="choose1" id="choose1">
+                                  <div class="d1">أسئله و اجوبة</div>
+                                  <hr>
+                                  <div class="d2">أسئلة و اجوبه</div>
+                                  <hr>
+                                  <div class="d3">التسويق والمبيعات</div>
+                                  <hr>
+                                  <div class="d4">البرمجة</div>
+                                  <hr>
+                                  <div class="d5">التصميم</div>
+                                  <hr>
+                                  <div class="d6">DevOps</div>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="radio">
+                              <td ><input type="radio" class="radio2"></td>
+                              <td>كتب</td>
+                              <div class="oo">
+                                
+                                <div class="choose1" id="choose1">
+                                  <div class="d1">كتب حسوب</div>
+                                  <hr>
+                                  <div class="d2"> احترف مع حسوب</div>
+                                  <hr>
+                                  <div class="d3"> كتب حسوب</div>
+                                  <hr>
+                                  <div class="d4">كتب</div>
+                                  <hr>
+                                  <div class="d5">كتب</div>
+                                  <hr>
+                                  <div class="d6">كتب</div>
+                                </div>
+                               </div>
+                            </div>
+                           
+                
+               <div class="tasneef" id="tasneef">
+                <!-- <div class="content">التصنيفات</div> -->
+                 
+                <button id="chooseButton"> <i class="fa fa-chevron-down"></i>أختر</button>
+                <div class="choose" id="choose">
+                  <div class="c1"> sss</div>
+                  <hr>
+                  <div class="c2">العمل الحر</div>
+                  <hr>
+                  <div class="c3">التسويق والمبيعات</div>
+                  <hr>
+                  <div class="c4">البرمجة</div>
+                  <hr>
+                  <div class="c5">التصميم</div>
+                  <hr>
+                  <div class="c6">DevOps</div>
+                  <hr>
+                </div>
+
+                <div>
+                </div>
+              </div></div>
+     
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="content">  ابحث في</div>
+                        <div class="radio2 radio1">
+                         <td><input type="radio"></td>
+                         <td>   العناوين و المحتوى </td>
+                       </div>
+                       <div class="radio">
+                        <td><input type="radio" class="radio2"></td>
+                        <td>    المحتوى فقط </td>
+                      </div>
+                      <div class="content">   تاريخ الانشاء</div>
+                      <div class="radio2 radio1">
+                       <td><input type="radio" class="radio2"></td>
+                       <td>   الكل </td>
+                     </div>
+                     <div class="radio">
+                      <td><input type="radio"></td>
+                      <td>أخر 24 ساعه</td>
+                    </div>
+                     <div class="radio">
+                      <td><input type="radio" class="radio2"></td>
+                      <td>أخر اسبوع</td>
+                    </div>
+                    <div class="radio">
+                      <td><input type="radio" class="radio2"></td>
+                      <td>    أخر شهر </td>
+                    </div>
+                    <div class="radio">
+                      <td><input type="radio" class="radio2"></td>
+                      <td>   أخر ستة أشهر </td>
+                    </div>
+                    <div class="radio">
+                      <td><input type="radio" class="radio2"></td>
+                      <td>    أخر سنة </td>
+                    </div>
+                    <div class="radio">
+                      <td><input type="radio" class="radio2"></td>
+                      <td>   مخصص </td>
+                    </div> 
+                   <hr>
+                  </div>
+
+
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="content">  ابحث عن</div>
+                        <div class="radio2 radio1">
+                         <td><input type="radio" class="radio2"></td>
+                         <td>   نتائج تحتوى على جميع الكلمات</td>
+                       </div>
+                       <div class="radio">
+                        <td><input type="radio" class="radio2"></td>
+                        <td>    نتائج تحتوى على اى من الكلمات </td>
+                      </div>
+
+                      <div class="content">   أخر تحديث</div>
+                      <div class="radio2 radio1">
+                        <td><input type="radio" class="radio2"></td>
+                        <td>   نتائج تحتوى على جميع الكلمات</td>
+                        </div>
+                        <div class="radio">
+                          <td><input type="radio" class="radio2"></td>
+                          <td>أخر 24 ساعه</td>
+                        </div>
+                         <div class="radio">
+                          <td><input type="radio" class="radio2"></td>
+                          <td>أخر اسبوع</td>
+                        </div>
+                        <div class="radio">
+                          <td><input type="radio" class="radio2"></td>
+                          <td>    أخر شهر </td>
+                        </div>
+                        <div class="radio">
+                          <td><input type="radio" class="radio2"></td>
+                          <td>   أخر ستة أشهر </td>
+                        </div>
+                        <div class="radio">
+                          <td><input type="radio" class="radio2"></td>
+                          <td>    أخر سنة </td>
+                        </div>
+                        <div class="radio">
+                          <td><input type="radio" class="radio2"></td>
+                          <td>   مخصص </td>
+                        </div> 
+                        <hr>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      
+      <section class="about">
+        <div class="container">
+          <div class="col text-center aboutHsoub">
+          <span >عن أكاديمية حسوب</span>
+          <span class="mr-3"> الأسئلة الشائعة</span>
+          <span class="mr-3"> اكتب معنا</span>
+          <span class="mr-3"> درّب معنا</span>
+          <span class="mr-3"> إرشادات الاستخدام</span>
+          <span class="mr-3"> بيان الخصوصية</span>
+          <span class="mr-3"> مركز المساعدة </span>
+        <div class="otherwise pt-2">© 2022 <span>Hsoub.</span> Content licensed under CC BY-NC-SA 4.0 unless mentioned otherwise.</div>
+          
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <section class="small-screen">
+        <i class="fas fa-bars smallScreenIcon" ></i>
+        <i class="fa fa-search smallScreenSearch" id="smallScreenSearch"></i>
+        <div class="fixed-menu">
+          <div class="col">
+          <div class="close">x</div>
+          <div class="smallIcon">
+            <i class="fa fa-envelope messageIcon" id="messageIconSmall" data-toggle="tooltip" data-placement="top" title="رسائل"></i>
+            <i  class="fa fa-bell ml-4 bellIcon" data-toggle="tooltip" data-placement="top" title="التنبيهات"></i>
+            <button id="button" class="btn btn-dark out" data-toggle="modal" data-target="#exampleModal">تسجيل الدخول</button>
+            <button  class="btn btn-dark"> حدد الموقع كمقروء <i class="fa fa-check check pl-1"></i></button>
+            </div>
+        </div>
+         <div class="myaccount text-right" id="myaccount">
+
+          <div class="account">
+            <div class="pl-3"><i class="fas fa-angle-left myaccountIcon"></i></div>
+            <div><a href="index.html">الرئيسية</a></div>
+          </div>
+          <div class="account">
+            <div class="pl-3"><i class="fas fa-angle-left myaccountIcon"></i></div>
+            <div><a href="frontend.html">تطوير واجهات المستخدم</a></div>
+          </div>
+              <div class="account">
+                <div class="pl-3"><i class="fas fa-angle-left myaccountIcon"></i></div>
+                <div><a href="javascript.html">جافاسكريبت</a></div>
+              </div>
+              <div class="account">
+                <div class="pl-3"><i class="fas fa-angle-left myaccountIcon"></i></div>
+                <div><a href="php.html">لغة بى اتش بي</a></div>
+              </div>
+              <div class="account">
+                <div class="pl-3"><i class="fas fa-angle-left myaccountIcon"></i></div>
+                <div><a href="ruby.html">لغة روبى</a></div>
+              </div>
+              <div class="account">
+                <div class="pl-3"><i class="fas fa-angle-left myaccountIcon"></i></div>
+                <div><a href="python.html">لغة بايثون</a></div>
+              </div>
+            </div>
+
+            <div class="myaccount2 text-right" id="myaccount2">
+              <div class="account2">
+                
+                <div class="back" id="back"> للخلف</div>
+              </div>
+              <div class="account2">
+
+                <div><a href="search.html">بحث</a></div>
+              </div>
+            </div>
+      </section>
+      
+      
+    
+   
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <script src="javascript.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
