@@ -469,6 +469,13 @@ header section.nav .second-title{
 
 header section.nav .second-title .second-title-div{
    float: right;
+
+}
+
+header section.nav .second-title .second-title-div .follow a{
+    color:rgba(0,0,0 ,0.6);
+    text-decoration:none;
+    font-size: 14px;
 }
 
 .search{
@@ -476,7 +483,7 @@ header section.nav .second-title .second-title-div{
 }
 
  .search form .form-group input{
-    background-color: gray;
+    background-color: #fff;
     direction: rtl;
     box-shadow: none!important;
     width: 90%;
@@ -488,46 +495,10 @@ header section.nav .second-title .second-title-div{
     color: #fff;
 }
 
- .search .searchSon{
-   
-    background-color:gray;
-    min-height:30px;
-    width: 90%;
-    border-radius:  5px;
-    position: absolute;
-    z-index: 20;
-    display: none;
-    left: 0px;
-    top: 30px;
-    direction: rtl;
-    
-}
-
-.search .searchSon div{
-   
-    padding-bottom: 10px;
-    padding-right: 15px;
-    color: #3c6994;
-    direction: rtl;
-    text-align: right;
-    cursor:pointer;
-   
-    
-   
-    
-}
-
-
-.ryada, .parmaga, .tasmem, .ops, .amal, .taswek, .parameg, .shahadat, .agweba, .kotob, .adaa{
-    display: none;
-}
-
 
 .active{
     background-color: #ebeef2;
 }
-
-
 
 
 header section.nav .second-title .second-title-div .courses{
@@ -590,6 +561,10 @@ header section.nav .second-title .second-title-div  .main{
     cursor: pointer;
 }
 
+header section.nav .second-title .second-title-div  .main a{
+    color: #000;
+    text-decoration: none;
+}
 
 header section.activity{
     background-color: #ebeef2;
@@ -701,10 +676,6 @@ header section.activity .activity-title1 .part div:last-of-type{
 }
 
 
-.activity-title1 a{
-    color: gray;
-
-}
 
 .activity-title1 a:hover{
     color: gray;
@@ -720,8 +691,6 @@ header section.activity .activity-title1 .part div:last-of-type{
 
 }
 
-
-
 .activity-title1 div, .activity-title2 div, .activity-title3 div
  ,.activity-title4 div, .activity-title5 div, .activity-title6 div{
     font-size: 14px;
@@ -730,6 +699,14 @@ header section.activity .activity-title1 .part div:last-of-type{
     margin-left: 15px;
     cursor: pointer;
 }
+
+.activity-title1 a, .activity-title2 a, .activity-title3 a
+ ,.activity-title4 a, .activity-title5 a, .activity-title6 a{
+    color: gray;
+    text-decoration: none;
+}
+
+
 
 
 section.home{
