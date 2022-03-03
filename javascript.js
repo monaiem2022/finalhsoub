@@ -51,65 +51,75 @@ $('.back').on('click', function () {
 
 
 $('#search').on('keyup',function(){
-  $('.searchSon').show();
+
   let search2 = $('#search');
   let final = search2.val();
-  let searchResult = $('.searchResult');
-  $('.searchSon2').hide();
 
-  if(final.includes('ريادة')){
-    $('.ryada').show();
-  }
- if (final.includes('رياده')){
-    $('.ryada').show()
-  }
+
+  if(final.includes('ج')){
+    $(search2.val('جافاسكريبت'));
+    $(search2).css('cursor','pointer') ;
  
- if(final.includes('برمجة')){
-    $('.parmaga').show()
+     $(search2).on('click',function () {
+       location = 'javascript.html'
+     });
   }
 
- if (final.includes('برمجه')){
-    $('.parmaga').show()
-  }
-
-  if(final.includes('مقالات')){
-    $('.searchSon div').show();
-  }
-
-  if (final.includes('تصميم')){
-    $('.parmaga').show();
-    $('.tasmem').show();
-    $('.ops').show();
-  }
-  if (final.includes('css')){
-    $('.parmaga').show();
-    $('.ops').show();
-  }
-
-  if (final.includes('html')){
-    $('.parmaga').show();
-    $('.ops').show();
-  }
-
-  if (final.includes('javascript')){
-    $('.parmaga').show();
-    $('.tasmem').show();
-  }
-
-  if (final.includes('python')){
-    $('.parmaga').show();
-    $('.tasmem').show();
-    $('.ops').show();
-  }
+  else if(final.includes('ر')){
+    $(search2.val('لغة روبى'));
+    $(search2).css('cursor','pointer') ;
  
+     $(search2).on('click',function () {
+       location = 'ruby.html'
+     });
+  }
+
+
+  else if(final.includes('و')){
+    $(search2.val('واجهات المستخدم'));
+    $(search2).css('cursor','pointer') ;
+ 
+     $(search2).on('click',function () {
+       location = 'frontend.html'
+     });
+  }
+  else if(final.includes('بى')){
+    $(search2.val('لغة بى اتش بى'));
+    $(search2).css('cursor','pointer') ;
+ 
+     $(search2).on('click',function () {
+       location = 'php.html'
+     });
+  }
+  
+  else if(final.includes('با')){
+    $(search2.val('لغة بايثون'));
+    $(search2).css('cursor','pointer') ;
+ 
+     $(search2).on('click',function () {
+       location = 'python.html'
+     });
+  }
+
+  else if(final.includes('ك')){
+    $(search2.val('كل الانشظة'));
+    $(search2).css('cursor','pointer') ;
+ 
+     $(search2).on('click',function () {
+       location = 'allactivity.html'
+     });
+  }
+
 });
 
 
 $('#search').on('click',function (){
   $('.mustSign').hide();
-  $('.searchSon').show();
+
 
 });
+
+
 
 
 let signIn = document.getElementById('signIn');
@@ -670,9 +680,9 @@ spicialist.onclick = function () {
 
 $('.follow li').on('mouseover',function (){
   $('.follow li').removeClass('active');
-  $('.follow li').css('color','#fff');
+  $('.follow li').css('color','#000');
   $(this).addClass('active');
-  $(this).css('color','#000');
+  $(this).css('color','#fff');
  
 })
 
@@ -745,18 +755,8 @@ smallScreenIcon.onclick = function () {
 
 let smallScreenSearch = document.getElementById('smallScreenSearch');
 let search = document.getElementById('search');
-let searchSon = document.getElementById('searchSon');
 
-smallScreenSearch.onclick = function () {
 
-   if (search.style.display == 'block'){
-     search.style.display = 'none';
-     searchSon.style.display = 'none';
-   }  else {
-     search.style.display = 'block';
-   
-   }
-}
 
 // // searchSon.children('div').onmouseout = function () {
 // //   searchSon.style.backgroundColor= 'green'
@@ -772,6 +772,7 @@ smallScreenSearch.onclick = function () {
 // //     ^^^^^^^^^^^^^^^^^^
 //   searchSon.style.backgroundColor = "green";
 // };
+
 
 
 
